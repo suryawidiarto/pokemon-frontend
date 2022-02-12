@@ -12,31 +12,31 @@ Thanks
 Clone the project
 
 ```bash
-  git clone https://github.com/suryawidiarto/pokemon-backend.git
+git clone https://github.com/suryawidiarto/pokemon-frontend.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+cd pokemon-frontend
 ```
 
 Install dependencies
 
 ```bash
-  npm install
+npm install
 ```
 
 Start the server
 
 ```bash
-  npm run start
+npm run start
 ```
 
 App Should be running on
 
 ```bash
-  http://localhost:3000/
+http://localhost:3000/
 ```
 
 ## Run Locally via Docker
@@ -44,23 +44,23 @@ App Should be running on
 Clone the project
 
 ```bash
-  git clone https://github.com/suryawidiarto/pokemon-backend.git
+git clone https://github.com/suryawidiarto/pokemon-frontend.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+cd pokemon-frontend
 ```
 
 Build and run
 
 ```bash
-  docker-compose up --build
+docker-compose up --build
 ```
 
 App Should be running on
 
 ```bash
-  http://localhost:3000/
+http://localhost:3000/
 ```
