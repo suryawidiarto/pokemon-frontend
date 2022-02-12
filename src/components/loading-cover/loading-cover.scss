@@ -1,0 +1,13 @@
+.loading-wrapper {
+  display: flex;
+  height: calc(100vh - 65px);
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c8cbd;
+  opacity: 80%;
+
+  .loading-bar {
+    color: white;
+  }
+}

@@ -1,0 +1,204 @@
+.detail-my-pokemon-container {
+  height: calc(100vh - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (max-width: 1350px) {
+    height: 100%;
+  }
+
+  .detail-my-pokemon-wrapper {
+    display: flex;
+    border-radius: 5px;
+    margin: 2rem;
+    background-color: #fff;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .pokemon-col1 {
+      width: 400px;
+      margin: 1rem 0 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      @media screen and (max-width: 450px) {
+        max-width: max-content;
+        margin: 1rem 1rem 1rem 1rem;
+      }
+
+      .pokemon-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .pokemon-img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      .pokemon-name {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .pokemon-type {
+        display: flex;
+        flex-direction: row;
+        margin: 0.5rem;
+        @media screen and (max-width: 450px) {
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        .pokemon-type-div {
+          border-radius: 5px;
+          background-color: #47a9da;
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          padding: 0.5rem;
+          color: #fff;
+          font-weight: 500;
+          font-size: 14px;
+          margin-right: 1rem;
+
+          @media screen and (max-width: 450px) {
+            margin: 0;
+          }
+
+          width: 60px;
+          text-align: center;
+        }
+      }
+    }
+
+    .pokemon-col2 {
+      width: 400px;
+      margin: 1rem 0 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media screen and (max-width: 450px) {
+        max-width: max-content;
+        margin: 1rem 1rem 1rem 1rem;
+      }
+
+      @media screen and (max-width: 1350px) {
+        margin: 1rem 1rem 1rem 1rem;
+      }
+
+      .pokemon-col2-label {
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        color: #2c8cbd;
+      }
+
+      .pokemon-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 200px);
+        margin-bottom: 1rem;
+
+        @media screen and (max-width: 450px) {
+          margin-bottom: 2rem;
+        }
+
+        .pokemon-stats-div {
+          background-color: #47a9da;
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          margin: 0.5rem;
+          border-radius: 5px;
+          text-align: center;
+          color: #fff;
+        }
+      }
+
+      .pokemon-abilities {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 200px);
+        margin-bottom: 1rem;
+
+        .pokemon-ability-div {
+          background-color: #47a9da;
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          margin: 0.5rem;
+          border-radius: 5px;
+          padding: 0.5rem;
+          text-align: center;
+          color: #fff;
+        }
+      }
+    }
+
+    .pokemon-col3 {
+      width: 400px;
+      margin: 1rem 1rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: 450px) {
+        max-width: max-content;
+        margin: 1rem 1rem 1rem 1rem;
+      }
+
+      .pokemon-col3-label {
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        color: #2c8cbd;
+      }
+
+      .pokemon-col3-wrapper {
+        background-color: #2c8cbd;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .my-detail-pokemon-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .my-detail-pokemon-button {
+      margin: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 5px;
+      background-color: #fff;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+      color: #47a9da;
+
+      .my-detail-pokemon-button-text {
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: #47a9da;
+        color: #fff;
+      }
+    }
+  }
+  .MuiList-root {
+    justify-self: center;
+    align-self: center;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+}

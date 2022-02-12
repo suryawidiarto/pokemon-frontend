@@ -1,0 +1,66 @@
+.my-pokemon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 65px);
+
+  @media screen and (max-width: 1250px) {
+    max-height: 100%;
+    height: auto;
+  }
+
+  .my-pokemon-empty {
+    margin: 0;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #47a9da;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 1250px) {
+      margin-top: 2rem;
+    }
+  }
+
+  .my-pokemon-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+
+    .my-pokemon-pokemon-wrapper {
+      display: grid;
+      max-width: 100%;
+      grid-template-columns: repeat(auto-fit, 250px);
+    }
+
+    .MuiPaginationItem-root {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      font-size: 16px;
+
+      @media screen and (max-width: 450px) {
+        padding: 0;
+        margin: 0.2rem 0px;
+        font-size: 14px;
+      }
+
+      &.Mui-selected {
+        background-color: #fff;
+        color: #0d0d00;
+        border: none;
+
+        &:hover {
+          background-color: #fff;
+          color: #0d0d00;
+          opacity: 50%;
+        }
+      }
+    }
+  }
+}
